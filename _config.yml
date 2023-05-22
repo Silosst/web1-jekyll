@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Evermore
-email: evermore@example.com
+title: TOKYO
+email: TOKYO@example.com
 description: I'm a simple responsive blog template. Easily add new blog posts using the Webflow Editor or customize your layout/design using the Webflow Designer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

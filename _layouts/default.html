@@ -1,17 +1,14 @@
 {% include head.html %}
-
-<div>
 <ul>
     {% for post in site.posts %}
-    <div class="info">
-        <h1>{{post.title}}</h1>
-        <h4>{{post.date}}</h4>
-        <h3>{{post.description}}</h3>
+    <img class="logo" src="{{post.img}}">
+    <div class="posts">
+        <h2 class="title">{{post.title}}</h1>
+        <h4 class="date">{{post.date | date_to_long_string}}</h4>
+        <h3 class="desc">{{post.description}}</h3>
+        <a class="readmore"href="#">READ MORE</a>
     </div>
-    {% endfor%}
-</ul>  
-</div>
-
-
+    {% endfor %}
+</ul>
 
 {% include footer.html %}

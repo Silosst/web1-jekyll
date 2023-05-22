@@ -1,9 +1,15 @@
 {% include head.html %}
 
-    <h2>{{page.title}}</h2>
-    <div class="content">
-        {{content}}
-    </div>sdsde
+<ul>
+    {% for post in site.posts %}
+    <img src="{{post.img}}">
+    <div>
+        <h1>{{post.title}}</h1>
+        <h4>{{post.date}}</h4>
+        <h3>{{post.content}}</h3>
+        <a href="#">READ MORE</a>
+    </div>
+    {% endfor %}
+</ul>
 
-
-{% include footer.html %}je
+{% include footer.html %}
